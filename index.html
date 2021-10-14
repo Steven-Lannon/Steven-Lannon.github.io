@@ -1,12 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Page Title</title>
 </head>
 <body>
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
-
+<div class="flex-container">
+  <div class="item"><a href="https://form.jotform.com/212804349876061">Patient Information</a></div>
+  <div class="item"><a href="https://form.jotform.com/212835732981058">AWV</a></div>
+  <div class="item"><a href="https://form.jotform.com/212843703799062">HealthIX</a></div> 
+  <div class="item"><a href="https://form.jotform.com/212805012737045">PHQ-9</a></div>
+  <div class="item"><a href="https://form.jotform.com/212834739507058">NPS Survey</a></div>
+</div>
 </body>
 </html>
+
+<style>
+
+body{
+background-color: DodgerBlue;
+}
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+justify-content: center;
+  align-items: center;
+
+
+}
+.item {
+  background-color: #f1f1f1;
+  width: 300px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.flex-container > div:hover{
+background-color: yellow;
+}
+</style>
