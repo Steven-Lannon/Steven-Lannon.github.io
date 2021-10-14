@@ -5,6 +5,7 @@
 <body>
 
 <div class="flex-container">
+<h1>Please complete the following forms:</h1>
   <div class="item"><a href="https://form.jotform.com/212804349876061">Patient Information</a></div>
   <div class="item"><a href="https://form.jotform.com/212835732981058">AWV</a></div>
   <div class="item"><a href="https://form.jotform.com/212843703799062">HealthIX</a></div> 
@@ -19,22 +20,26 @@
 body{
 background-color: DodgerBlue;
 }
+h1{
+font-size:45px;
+color:darkblue;
+}
 .flex-container {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 justify-content: center;
   align-items: center;
-   min-height: 100vh;
 
 }
 .item {
   background-color: #f1f1f1;
-  width: 300px;
-  margin: 10px;
+  width: 400px;
+  margin: 30px;
   text-align: center;
   line-height: 75px;
-  font-size: 30px;
+  font-size: 50px;
+  padding:.5em;
 }
 .flex-container > div:hover{
 background-color: yellow;
