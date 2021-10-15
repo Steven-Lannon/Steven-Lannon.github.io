@@ -6,6 +6,7 @@
 
 <div class="flex-container">
 <h1>Please complete the following forms:</h1>
+<h2>[Tap on a box to begin]</h2>
   <div class="item"><a href="https://form.jotform.com/212804349876061">Patient Information</a></div>
   <div class="item"><a href="https://form.jotform.com/212835732981058">AWV</a></div>
   <div class="item"><a href="https://form.jotform.com/212843703799062">HealthIX</a></div> 
@@ -19,16 +20,17 @@
 </html>
 
 <style>
-
 body{
-background-color: lightblue;
+font-family:arial;
+background-color: #e8e8e8;
 }
 p{
-font-size:35px;
+font-size:30px;
 text-align:center;
 }
 h1{
 font-size:45px;
+margin-bottom:-.1em;
 }
 .flex-container {
   display: flex;
@@ -38,18 +40,38 @@ justify-content: center;
   align-items: center;
 
 }
+.item a{
+text-decoration:none;
+color:white;
+}
 .item {
-  background-color: #f1f1f1;
+  //background-color: #f1f1f1;
+box-shadow: 3px 3px 3px 2px #9fb4f2;
+background-color:#7892c2;
+	border-radius:10px;
+	border:1px solid #4e6096;
+	display:inline-block;
+	text-shadow:0px 1px 0px #283966;
   width: 400px;
   margin: 25px;
   text-align: center;
   line-height: 75px;
-  font-size: 50px;
+  font-size: 45px;
   padding:.5em;
 }
-.flex-container > div:hover{
-background-color: yellow;
+.item:nth-child(3) {
+  background-color: #FF6F61;
 }
+.item:nth-child(4) {
+  background-color: #88B04B;
+}
+.item:nth-child(5) {
+  background-color: #009B77;
+}
+.item:nth-child(6) {
+  background-color: #EFC050;
+}
+
 #gg{
 width:200px;
 }
