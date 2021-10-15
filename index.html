@@ -2,18 +2,8 @@
 <!DOCTYPE html>
 <html>
 
-<body onload="function()">
-<script>
-/* iOS re-orientation fix */
-if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i)) {
-    /* iOS hides Safari address bar */
-    window.addEventListener("load",function() {
-        setTimeout(function() {
-            window.scrollTo(0, 1);
-        }, 1000);
-    });
-}
-</script>
+<body onload="setTimeout(function() { window.scrollTo(0, 1) }, 100);">
+
 <div class="flex-container">
 <h1>Please complete the following forms:</h1>
 <h2>[Tap on a box to begin]</h2>
