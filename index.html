@@ -31,13 +31,15 @@
   <p><img id="gg" src="https://sp-ao.shortpixel.ai/client/q_lossless,ret_img/https://smartmeterrpm.com/wp-content/uploads/GlucoseGuards.png"></p>
   <div class="label">
     <label>Select Provider </label>
-        <select id="providerselect" onclick="changeprovider()">
-          <option id="" value=""></option>
-          <option id="Dr.A" value="Dr.A">Dr. A</option>
-          <option id="Dr.B" value="Dr.B">Dr. B</option>
-          <option>Dr. C</option>
-          <option>Dr. D</option>
-        </select>
+
+
+        <form>
+          <select id="menu">
+            <option value="0">Dr. A</option>
+            <option value="1">Dr. B</option>
+            <option value="2">Dr. C</option>
+          </select>
+        </form>
         <br><br>
       </div>
 
@@ -45,27 +47,25 @@
 </html>
 <script>
   
-  function changeprovider() {
-    var provider = document.getElementById('providerselect').value;
+  v_menu = document.getElementById("menu");
+v_menu.addEventListener("change", changeprovider);
 
-    switch (provider) {
-        case 'Dr.A':  {
-          document.getElementById("demo").innerHTML = "Welcome to the Practice of Dr. A!";
-          break;
-         
-        }
-        case 'Dr.B': {
-          
-          document.getElementById("demo").innerHTML = "Welcome to the Practice of Dr. B!";
-          break;
-        }
-case 'Dr.C': {
-          
-          document.getElementById("demo").innerHTML = alert("Dr. C");
-          break;
-        }
-      }
-    }
+function changeprovider(){
+switch(v_menu.value)
+{
+	case "0": 
+  alert("a");
+  break;
+  
+  case "1": 
+  alert("b");
+  break; 
+
+  case "2": 
+  document.getElementById("demo").innerHTML = "Welcome to the practice of Dr. C!";
+  break; 
+}
+}
   </script>
 <style>
   #demo{
