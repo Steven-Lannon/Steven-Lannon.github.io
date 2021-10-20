@@ -5,12 +5,12 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body>
+<body onload="selectProvider()">
   <p id="demo"></p>
 <h1>Please complete the following forms:</h1>
 <h2>[Tap on a box to begin]</h2>
 
-<div class="flex-container">
+<div class="flex-container" id="flex-container">
 
     
 
@@ -35,9 +35,10 @@
 
         <form>
           <select id="menu">
-            <option value="0">Dr. A</option>
-            <option value="1">Dr. B</option>
-            <option value="2">Dr. C</option>
+            <option value="empty"></option>
+            <option value="bianco">Dr. Bianco</option>
+            <option value="brook">Dr. Brook</option>
+            <option value="sabinsky">Dr. Sabinsky</option>
           </select>
         </form>
         <br><br>
@@ -46,23 +47,31 @@
 </body>
 </html>
 <script>
-  
+  function selectProvider(){
+    alert("Please select your provider.");
+    document.getElementById("flex-container").style.display = "none";
+  }
   v_menu = document.getElementById("menu");
 v_menu.addEventListener("change", changeprovider);
-
+var welcome = "Welcome to the practice of Dr. ";
 function changeprovider(){
 switch(v_menu.value)
 {
-	case "0": 
-  alert("a");
+  case "empty": 
+  document.getElementById("demo").innerHTML = "";
+  document.getElementById("flex-container").style.display = "none";
+  break;
+	case "bianco": 
+  document.getElementById("demo").innerHTML = welcome + "Bianco!";
+ document.getElementById("flex-container").style.display = "flex";
   break;
   
-  case "1": 
-  alert("b");
+  case "brook": 
+  document.getElementById("demo").innerHTML = welcome + "Brook!";
   break; 
 
-  case "2": 
-  document.getElementById("demo").innerHTML = "Welcome to the practice of Dr. C!";
+  case "sabinsky": 
+  document.getElementById("demo").innerHTML = welcome + "Sabinsky!";
   break; 
 }
 }
