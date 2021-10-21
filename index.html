@@ -14,19 +14,12 @@
 
     
 
-<a href="https://form.jotform.com/212804349876061">
-  <div class="item" id="item1">Patient Information</div></a>
-<a href="https://form.jotform.com/212835732981058">
- <div class="item" id="item2">AWV</div></a>
-<a href="https://form.jotform.com/212843703799062">
-  <div class="item" id="item3">HealthIX</div></a>
-<a href="https://form.jotform.com/212805012737045">
-  <div class="item" id="item4">PHQ-9</div></a>
-<a href="https://delighted.com/t/jXSZlOa6">
-  <div class="item" id="item5">NPS Survey</div></a>
-
+  <div class="item"><a href="https://form.jotform.com/212804349876061">Patient Information</a></div>
+  <div class="item"><a href="https://form.jotform.com/212835732981058">AWV</a></div>
+  <div class="item"><a href="https://form.jotform.com/212843703799062">HealthIX</a></div> 
+  <div class="item"><a href="https://form.jotform.com/212805012737045">PHQ-9</a></div>
+  <div class="item"><a href="https://form.jotform.com/212834739507058">NPS Survey</a></div>
 </div>
-
   <p>If you are interested in the Glucose Guards program, please book your consulting appointment <a href="https://letsmeet.io/glucoseguards2/chips-interest-consult">here</a>.</p>
   <p><img id="gg" src="https://sp-ao.shortpixel.ai/client/q_lossless,ret_img/https://smartmeterrpm.com/wp-content/uploads/GlucoseGuards.png"></p>
   <div class="label">
@@ -79,6 +72,7 @@ switch(v_menu.value)
 }
   </script>
 <style>
+<<<<<<< HEAD
   #demo{
 font-size: 60px;
 color:red;
@@ -90,6 +84,8 @@ color:red;
 .label{
   text-align: center;
 }
+=======
+>>>>>>> parent of 88c09bb (added space for buttons)
 .content{
 margin:auto;
 width:50%;
@@ -119,7 +115,7 @@ margin-bottom:-.1em;
 h1,h2{
 text-align:center;
 }
-.flex-container{
+.flex-container {
 
   display: flex;
   flex-direction: column;
@@ -128,15 +124,13 @@ justify-content: center;
   align-items: center;
 
 }
-.flex-container a{
+.item a{
 text-decoration:none;
 color:white;
 }
-p a{
-color:blue;
-}
 .item {
 box-shadow: 3px 3px 3px 2px #9fb4f2;
+background-color:#7892c2;
 	border-radius:10px;
 	border:1px solid #4e6096;
 	display:inline-block;
@@ -148,21 +142,19 @@ box-shadow: 3px 3px 3px 2px #9fb4f2;
   font-size: 45px;
   padding:.5em;
 }
-#item1 {
+.item:nth-child(1) {
   background-color: #FF6F61;
 }
-#item2 {
+.item:nth-child(2) {
   background-color: #88B04B;
 }
-#item3 {
+.item:nth-child(3) {
   background-color: #009B77;
 }
-#item4 {
+.item:nth-child(4) {
   background-color: #EFC050;
 }
-#item5{
-background-color:#7892c2;
-}
+
 #gg{
 width:200px;
 }
