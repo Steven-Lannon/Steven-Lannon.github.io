@@ -5,8 +5,7 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body onload="selectProvider()">
-  <p id="demo"></p>
+<body>
 <h1>Please complete the following forms:</h1>
 <h2>[Tap on a box to begin]</h2>
 
@@ -22,70 +21,14 @@
 </div>
   <p>If you are interested in the Glucose Guards program, please book your consulting appointment <a href="https://letsmeet.io/glucoseguards2/chips-interest-consult">here</a>.</p>
   <p><img id="gg" src="https://sp-ao.shortpixel.ai/client/q_lossless,ret_img/https://smartmeterrpm.com/wp-content/uploads/GlucoseGuards.png"></p>
-  <div class="label">
-    <label>Select Provider </label>
-
-
-        <form>
-          <select id="menu">
-            <option value="empty"></option>
-            <option value="bianco">Dr. Bianco</option>
-            <option value="brook">Dr. Brook</option>
-            <option value="sabinsky">Dr. Sabinsky</option>
-          </select>
-        </form>
-        <br><br>
-      </div>
+ 
 
 </body>
 </html>
-<script>
-  function selectProvider(){
-    alert("Please select your provider.");
-    document.getElementById("flex-container").style.display = "none";
-  }
-  v_menu = document.getElementById("menu");
-v_menu.addEventListener("change", changeprovider);
-var welcome = "Welcome to the practice of Dr. ";
-function changeprovider(){
-switch(v_menu.value)
-{
-  case "empty": 
-  document.getElementById("demo").innerHTML = "";
-  document.getElementById("flex-container").style.display = "none";
-  break;
-	case "bianco": 
-  document.getElementById("demo").innerHTML = welcome + "Bianco!";
- document.getElementById("flex-container").style.display = "flex";
-  break;
-  
-  case "brook": 
-  document.getElementById("demo").innerHTML = welcome + "Brook!";
-  document.getElementById("flex-container").style.display = "flex";
-  break; 
 
-  case "sabinsky": 
-  document.getElementById("demo").innerHTML = welcome + "Sabinsky!";
-  document.getElementById("flex-container").style.display = "flex";
-  break; 
-}
-}
-  </script>
 <style>
-<<<<<<< HEAD
-  #demo{
-font-size: 60px;
-color:red;
-  }
-  label, select{
-    font-size:40px;
-    
-  }
-.label{
-  text-align: center;
-}
-=======
->>>>>>> parent of 88c09bb (added space for buttons)
+
+ 
 .content{
 margin:auto;
 width:50%;
